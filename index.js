@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res, next)=>{
     //res.send('Express on Vercel');
     //res.sendFile(__dirname + '/index.html');
-    res.render('main');
+    res.render('views/main');
 });
 
 app.listen(PORT, ()=> {

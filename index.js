@@ -3,8 +3,9 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static("public"));
+//app.use(express.static("public"));
 //app.use("/client", express.static(__dirname + "/client"));
+app.use(express.static("/public", express.static(_dirname + "/public")));
 
 
 app.get('/', (req, res, next)=>{

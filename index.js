@@ -1,5 +1,6 @@
 const express = require("express");
 const ejs = require('ejs');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -8,12 +9,13 @@ const PORT = process.env.PORT || 3000;
 //app.use("/client", express.static(__dirname + "/client"));
 app.use("/public", express.static(__dirname + "/public"));
 
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res, next)=>{
     //res.send('Express on Vercel');
     //res.sendFile(__dirname + '/index.html');
-    res.render('views/main');
+    res.render('main');
 });
 
 app.listen(PORT, ()=> {

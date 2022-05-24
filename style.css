@@ -1,0 +1,16 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(0, 100%, 48%);
+    font-weight: 600;
+    font-size: inherit;
+}
+
+p {
+    color: hsl(122, 91%, 18%);
+    font-weight: 400;
+}

@@ -7,7 +7,8 @@ const PORT = process.env.PORT || 3000;
 
 
 app.get('/', (req, res, next)=>{
-    res.send('Express on Vercel');
+    //res.send('Express on Vercel');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(PORT, ()=> {

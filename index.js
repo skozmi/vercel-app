@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 //app.use(express.static("public"));
 //app.use("/client", express.static(__dirname + "/client"));
-app.use("/public", express.static(_dirname + "/public"));
+app.use("/public", express.static(__dirname + "/public"));
 
 
 app.get('/', (req, res, next)=>{
